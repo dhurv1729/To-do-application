@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=12.0">
+    <title>Document</title>
+
+
+    <style>
+
+
+        .container {
+            font-size: 1.2rem;
+            padding: 5rem;
+            max-width: 500px;
+            margin: auto;
+            margin-top: 5rem;
+            line-height: 4;
+            font-family: sans-serif;
+            background-color: rgb(223, 232, 240);
+        }
+
+        .button {
+            width: 7rem;
+            height: 2rem;
+            border-radius: 5px;
+
+        }
+
+        .button:hover {  
+            background-color: #005f7e;
+            color: white;
+            border: 2px solid #00475e;
+        }
+        
+    </style>
+
+</head>
+<body>
+
+    
+
+    <div class="container">
+
+
+
+        <form action="/" method="post">
+            <label for="headline">Task Headline : <input type="text" id="headline" name="headline" required></label> <br>
+            <label for="notes">Notes: <textarea name="notes" id="notes" cols="30" rows="10"></textarea></label> <br>
+            <label for="duedate">Due date: <input type="datetime-local" id="duedate" name="duedate" required></label> <br>
+            <label for="priority"> 
+                Priority
+                <select name = "priority" id="priority">
+                    <option value = "none" selected>None</option>
+                    <option value = "low">Low</option>
+                    <option value = "medium">Medium</option>
+                    <option value = "high">High</option>
+                </select>
+            </label> <br>
+            <input type="submit" value="Add Task" class="button">
+        </form>
+
+    </div>
+    
+</body>
+</html>
